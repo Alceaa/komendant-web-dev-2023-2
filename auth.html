@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+	    <div class="header">
+			<title>Home page | Аутентификация</title>
+			<div class="header-item" id="title-item">
+				<div class="nav-title"><h1>Аутентификация</h1></div>
+			</div>
+			<div class="header-item">
+				<div class="nav">
+					<ul class="nav-ul">
+						<li>
+							<form method="post" action="feedback.html">
+								<input class="nav-button" type="submit" value="Домашняя страница">
+							</form>
+						</li>
+						<li>
+							<form method="post" action="feedback.html">
+								<input class="nav-button" type="submit" value="Обратная связь">
+							</form>
+						</li>
+						<li>
+							<form method="post" action="auth.html">
+								<input class="nav-button" type="submit" value="Аутентификация">
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="auth.css"/>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		</div>
+	</head>
+	<body>
+		<div class="modal-form">
+			<form name="auth" method="post" action="https://httpbin.org/post">
+				<p><strong>Логин</strong>
+				<input maxlength="25" size="40" name="login">
+				</p>
+				<p><strong>Пароль</strong>
+				<input type="password" maxlength="25" size="40" name="password">
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
+	</body>
+	<footer>
+	    <div class="footer-container">
+		    <div class="footer-item">
+			    <h3>О сайте</h3>
+				<a>Данная страница является результатом второй лабораторной работой (Веб-технологии)</a>		
+			</div>
+			<div class="footer-item">
+			    <h3>Контакты</h3>
+			    <ul class="footer-ul">
+				    <li><a href="">maks.komendant@yandex.ru</a></li>
+					<li><a>+79259257991</a>	</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</html>

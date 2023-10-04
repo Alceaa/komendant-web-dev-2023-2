@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+	    <div class="header">
+			<title>Home page | Обратная связь</title>
+			<div class="header-item" id="title-item">
+				<div class="nav-title"><h1>Обратная связь</h1></div>
+			</div>
+			<div class="header-item">
+				<div class="nav">
+					<ul class="nav-ul">
+						<li>
+							<form method="post" action="feedback.html">
+								<input class="nav-button" type="submit" value="Домашняя страница">
+							</form>
+						</li>
+						<li>
+							<form method="post" action="feedback.html">
+								<input class="nav-button" type="submit" value="Обратная связь">
+							</form>
+						</li>
+						<li>
+							<form method="post" action="auth.html">
+								<input class="nav-button" type="submit" value="Аутентификация">
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="stylesheet" href="feedback.css"/>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		</div>
+	</head>
+	<body>
+		<div class="modal-form">
+			<form name="feedback" method="post" action="https://httpbin.org/post">
+				<p><h2>Форма обратной связи</h2></p>
+				<p><b>Фамилия:</b>
+					<input type="text" name="secondname" size="40">
+				</p>
+				<p><b>Имя:</b>
+					<input type="text" name="firstname" size="40">
+				</p>
+				<p><b>Отчество:</b>
+					<input type="text" name="middlename" size="40">
+				</p>
+				<p><b>Откуда узнали о нас:</b>
+					<input type="radio" name="source" value="search">В поисковике
+					<input type="radio" name="source" value="media">В социальных сетях
+					<input type="radio" name="source" value="friends">От друзей
+				</p>
+				<p><b>Тип обращения:</b>
+					<select size="1" style="width: 200px;" name="type">
+						<option selected value="1">Предложение</option>
+						<option value="2">Жалоба</option>					
+					</select>
+				</p>
+				<p><b>Текст обращения:</b>
+					<textarea rows="10" cols="45" name="text"></textarea>
+				</p>
+				<p><b>Прикрепите дополнительные файлы:</b>
+					<input type="file" name="f">
+				</p>
+				<p><b>Согласие на обработку персональных данных</b>
+					<input type="checkbox" name="pd">
+				<p>
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
+	</body>
+	<footer>
+	    <div class="footer-container">
+		    <div class="footer-item">
+			    <h3>О сайте</h3>
+				<a>Данная страница является результатом второй лабораторной работой (Веб-технологии)</a>		
+			</div>
+			<div class="footer-item">
+			    <h3>Контакты</h3>
+			    <ul class="footer-ul">
+				    <li><a href="">maks.komendant@yandex.ru</a></li>
+					<li><a>+79259257991</a>	</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</html>

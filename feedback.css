@@ -6,6 +6,8 @@ body{
 	margin: 0 auto;
 	font-family: 'Roboto Slab', serif;
 	min-height: 100%;
+	display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 .header, .footer-container{
 	top: 0;
@@ -39,29 +41,8 @@ body{
 .nav-title{
 	color: white;
 }
-.img-block h2{
-	color: black;
-	display: block;
-}
-.img-block img{
-	display: block;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-table{
-	display: block;
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
-}
-table, td{
-	border: 1px solid #333;
-	text-align: center;
-}
-thead{
-	background-color: #333;
-	color: #fff;
+.modal-form{
+    padding-left: 30%;
 }
 footer{
 	padding-top: 10%;
